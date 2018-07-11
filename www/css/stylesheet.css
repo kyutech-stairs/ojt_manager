@@ -1,6 +1,12 @@
-body{
+*{
     margin: 0;
     padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: 'Noto Sans Japanese';
     background-color: #EEEFF1;
 }
@@ -16,13 +22,13 @@ header{
 }
 
 .content{
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .background-box{
-    width: 60%;
-    height: 80vh;
+    width: 50%;
     margin: 5% auto;
+    padding: 50px 0;
     border-radius: 20px;
     background-color: #ffffff;
 }
@@ -32,10 +38,70 @@ header{
     margin: 0 auto;
 }
 
+.content-title{
+    display: flex;
+    justify-content: space-between;
+}
+.content-title p{
+    font-size: 35px;
+}
+
+.content-title-input p{
+    font-size: 35px;
+}
+.content-title-input input{
+    font-family: 'Noto Sans Japanese';
+    font-size: 20px;
+}
+
+.link-button a{
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    width: 200px;
+    padding: 0.4em;
+    text-align: center;
+    border: 3px solid #90ee90;
+    background-color: #90ee90;
+    border-radius: 3px;
+    transition: .3s;
+}
+.link-button a:hover{
+    border: 3px solid #ec407a;
+    background-color: #ec407a;
+    color: white;
+}
+.link-button :link{
+    color: black;
+}
+.link-button :visited{
+    color: black;
+}
+
+#checklisturl{
+    width: 100%;
+    font-family: 'Noto Sans Japanese';
+    font-size: 20px;
+}
+
+.text-area{
+    margin: 25px 0;
+    font-size: 20px;
+}
+
+textarea{
+    font-family: 'Noto Sans Japanese';
+    font-size: 100%;
+    width: 100%;
+}
+
 footer{
+    width: 100%;
+    margin-top: auto;
     background-color: #2f5167;
     color: #ffffff;
 }
+
 .footer-logo{
     display: flex;
     font-size: 20px;
